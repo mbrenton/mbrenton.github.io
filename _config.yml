@@ -1,10 +1,16 @@
-title: Matthew Brenton # name of the site
+title: Matthew Brenton 謳 # name of the site
 author: Matthew Brenton # name of site's author
 email: mbrenton98@gmail.com # email of site's author
 url: http://mbrenton.github.io/ # root address of the site
 baseurl: "/" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
 description: > # description of the site (multiple lines allowed)
-  Testing Hello!
+  <p> 
+  <br> Hi, thanks for visiting my page :3
+  <br> Currently a student just trying to find my way
+  <br> I made this because I thought it would be fun and it looked cool
+  <br> Gonna use this to play around with css, html, js, and do whatever interests me with it <br>
+  <br> Articles will be created at a later date
+  </p>
 
 permalink: /:slug.html
 
@@ -14,10 +20,10 @@ favicon: "logo.png" # name+extension of favicon (which must be put on the root f
 remote_theme: riggraz/no-style-please # if you are using GitHub Pages, change it to remote_theme: riggraz/no-style-please
 
 theme_config:
-  appearance: "auto" # can be "light", "dark" or "auto"
+  appearance: "dark" # can be "light", "dark" or "auto"
   back_home_text: ".." # customize text for homepage link in post layout
   date_format: "%Y-%m-%d" # customize how date is formatted
-  show_description: false # show blog description in home page
+  show_description: true # show blog description in home page
 
 sass:
   style: :compressed

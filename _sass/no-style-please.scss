@@ -1,30 +1,31 @@
+
 // -------------- THEME SWITCHER -------------- //
-@mixin dark-appearance {
-  filter: invert(1);
-  img {
-    filter: invert(1);
+// @mixin dark-appearance {
+//   filter: invert(1);
+//   img {
+//     filter: invert(1);
 
-    &.ioda { filter: invert(0); }
-  }
-}
+//     &.ioda { filter: invert(0); }
+//   }
+// }
 
-body[a="dark"] { @include dark-appearance; }
+// body[a="dark"] { @include dark-appearance; }
 
 
-@media (prefers-color-scheme: dark) {
-  body[a="auto"] { @include dark-appearance; }
-}
+// @media (prefers-color-scheme: dark) {
+//   body[a="auto"] { @include dark-appearance; }
+// }
 // -------------------------------------------- //
 
 // bg color is also needed in html in order to
 // block body's background propagation
 // see: https://stackoverflow.com/a/61265706
-html, body { background: white; }
+html, body { background: rgb(0, 0, 0); }
 
 html { height: 100%; }
 
 body {
-  color: black;
+  color: rgb(204, 55, 248);
   font-family: monospace;
   font-size: 16px;
   line-height: 1.4;
@@ -43,7 +44,7 @@ p { margin: 1rem 0; }
 
 li { margin: 0.4rem 0; }
 
-*:target { background: yellow; }
+*:target { background: rgb(225, 11, 154); }
 
 .w {
   max-width: 640px;
@@ -91,4 +92,8 @@ img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+}
+
+a {
+  color: #3391ff;
 }
